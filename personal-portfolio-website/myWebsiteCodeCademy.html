@@ -5,17 +5,34 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Portfolio website</title>
 		<link rel="stylesheet" href="myWebsiteApp.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
 		<header>
 			<nav class="main-nav">
 				<h1 class="logo">Wan Menzy</h1>
 				<ul id="navigation-flex" class="navigation">
+					<!-- Light mode button -->
 					<iconify-icon
-						icon="solar:moon-bold-duotone"
+						id="light-mode-button"
+						icon="feather-sun"
 						class="navigation-items"
-						id="toggle-mode"
+						data-theme="light"
 					></iconify-icon>
+					<!-- Dark mode button -->
+					<iconify-icon
+						id="dark-mode-button"
+						icon="feather-moon"
+						class="navigation-items"
+						data-theme="dark"
+						style="display: none"
+					></iconify-icon>
+
 					<li class="navigation-items"><a href="">About Me</a></li>
 					<li class="navigation-items"><a href="">Projects</a></li>
 					<li class="navigation-items"><a href="">Skills</a></li>
@@ -27,43 +44,59 @@
 		<!-- This is the main body of the page, holding a brief write about myself -->
 		<main>
 			<section>
+				<div class="hero-section">
+					<div class="hero-text">
+						<h2>
+							Hey I'm <br />
+							Wan Menzy
+						</h2>
+						<p>
+							Director, Filmmaker, Editor <br />
+							Motion Artist & Animator <br />
+							Web Developer & Product Designer
+						</p>
+						<div class="buttons">
+							<button class="hire-button">Hire Me</button>
+							<button class="chat-button">Let's Chat</button>
+						</div>
+					</div>
+				</div>
 				<div class="about-me-container">
 					<div class="about-me-text-container">
 						<h3>About me</h3>
 						<p>
-							I'm Joshua Mensah, but you in paeticular can call me
-							<b>Wan Menzy</b>. I'm a filmmaker, content creator
-							and an aspiring programmer(currently studying Full
-							Stack engineering) and on courase to become a Full
-							Stack developer by December 2023.
+							I'm Joshua Mensah, but you can call me Wan Menzy.
+							I'm a versatile creative, encompassing the roles of
+							filmmaker, content creator, and an aspiring
+							programmer. Currently, I'm diligently pursuing my
+							studies in Full Stack Engineering, with the goal of
+							becoming a Full Stack Developer by December 2023.
 						</p>
 						<p>
-							I started my filmmaking journey in 2014 while
-							pursuing Communication Design in the Kwame Nkrumah
-							University of Science and Technology in Ghana. From
-							class projects and personal projects i took on while
-							pursuing the program, i developed great passion for
-							film and knew this was what i wanted to keep doing
-							moving forward. I have since partnered with several
-							brands locally and internationally to create amazing
-							projects on diverse topics. Xiaomi Global, Zhiyun
-							tech, Sandmarc, Moment are but a few of the
-							partnerships i've worked on.
+							My filmmaking journey commenced in 2014 during my
+							pursuit of a degree in Communication Design at Kwame
+							Nkrumah University of Science and Technology in
+							Ghana. As I engaged in both class projects and
+							personal endeavors, my passion for film burgeoned,
+							and I realized that this was my true calling. Over
+							time, I've cultivated partnerships with various
+							local and international brands, such as Xiaomi
+							Global, Zhiyun Tech, Sandmarc, and Moment,
+							collaborating on captivating projects spanning a
+							wide range of topics.
 						</p>
 						<p>
-							In my bid to keep creating, i became fascinated with
-							building tech tools and challenged myself to learn
-							the skills needed to build apps and websites that
-							would aim to solve some challenges we face in Ghana
-							and Africa as whole. My journey took me to
-							CodeCademy, Programiz Pro and other platforms that
-							I've been engaging with a ton to study the skills to
-							ready me for a programming journey in 2024.
-						</p>
-						<p>
-							Fun fact! I've been programing for
-							<span>6,557,895,864</span>
-							seconds!
+							Driven by a desire to continue creating, I found
+							myself drawn to the world of technology and felt
+							compelled to acquire the skills necessary for
+							building applications and websites that could
+							address some of the challenges faced in Ghana and
+							across Africa. My educational journey led me to
+							platforms like CodeCademy, Programiz Pro, and
+							others, where I've been diligently honing my
+							programming skills in preparation for a
+							transformative journey into the realm of programming
+							in 2024.
 						</p>
 					</div>
 					<img
@@ -77,55 +110,51 @@
 			<!-- this section includes videos that will display portfolio projects -->
 
 			<section>
-				<h2 class="project-text">PROJECTS</h2>
+				<h2 class="project-text">Projects</h2>
 
 				<div class="video-card">
-					<div>
-						<iframe
-							src="https://www.youtube.com/embed/48RFJTv7_O0?si=xoVvalZLexXr6uVP"
-							title="YouTube video player"
-							frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-							allowfullscreen
-						></iframe>
-						<iframe
-							src="https://www.youtube.com/embed/74iMQUbocLo?si=fHgooWZohHu8ARrk"
-							title="YouTube video player"
-							frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-							allowfullscreen
-						></iframe>
-						<iframe
-							src="https://www.youtube.com/embed/-nf57pBJDTk?si=0rT1BK0PmWYbKojX"
-							title="YouTube video player"
-							frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-							allowfullscreen
-						></iframe>
-					</div>
-					<div>
-						<iframe
-							src="https://www.youtube.com/embed/L_dHJKwtlBc?si=ErAHgOoCtoBtCQJq"
-							title="YouTube video player"
-							frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-							allowfullscreen
-						></iframe>
-						<iframe
-							src="https://www.youtube.com/embed/txIbBKTuWhs?si=cyNYqBdT_JQWVKay"
-							title="YouTube video player"
-							frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-							allowfullscreen
-						></iframe>
-						<iframe
-							src="https://www.youtube.com/embed/0qiFl0chUzI?si=Nb9MZqCJFFZCqaNe"
-							title="YouTube video player"
-							frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-							allowfullscreen
-						></iframe>
-					</div>
+					<iframe
+						src="https://www.youtube.com/embed/48RFJTv7_O0?si=xoVvalZLexXr6uVP"
+						title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						allowfullscreen
+					></iframe>
+					<iframe
+						src="https://www.youtube.com/embed/74iMQUbocLo?si=fHgooWZohHu8ARrk"
+						title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						allowfullscreen
+					></iframe>
+					<iframe
+						src="https://www.youtube.com/embed/-nf57pBJDTk?si=0rT1BK0PmWYbKojX"
+						title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						allowfullscreen
+					></iframe>
+					<iframe
+						src="https://www.youtube.com/embed/L_dHJKwtlBc?si=ErAHgOoCtoBtCQJq"
+						title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						allowfullscreen
+					></iframe>
+					<iframe
+						src="https://www.youtube.com/embed/txIbBKTuWhs?si=cyNYqBdT_JQWVKay"
+						title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						allowfullscreen
+					></iframe>
+					<iframe
+						src="https://www.youtube.com/embed/0qiFl0chUzI?si=Nb9MZqCJFFZCqaNe"
+						title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						allowfullscreen
+					></iframe>
 				</div>
 			</section>
 			<!-- This section will hold all the footer tags and details -->
@@ -133,9 +162,8 @@
 			<footer>
 				<div class="left-footer">
 					<p>Accra, Ghana</p>
-					<br />
-					<p>tel: <a href="">+23320 913 5440</a></p>
-					<p>mob: <a href="">+23355 455 35593</a></p>
+					<p>tel: <a href="tel:00233209135440">+23320 913 5440</a></p>
+					<p>tel: <a href="tel:00233554538893">+23320 913 5440</a></p>
 					<div class="socials">
 						<a
 							href="https://www.instagram.com/1menzy"
@@ -168,7 +196,7 @@
 							></iconify-icon
 						></a>
 					</div>
-					<p>2023 EnzymsGh. All Rights Reserved</p>
+					<p class="reserved">2023 EnzymsGh. All Rights Reserved</p>
 				</div>
 				<div class="right-footer">
 					<a href="" target="_blank" class="lower-nav">About Me</a>
@@ -178,7 +206,9 @@
 				</div>
 			</footer>
 		</main>
+		<!-- <script src="myWebsiteIndex.js"></script> -->
 		<script src="myWebsiteIndex.js"></script>
+
 		<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 	</body>
 </html>
