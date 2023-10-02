@@ -8,9 +8,14 @@
 	</head>
 	<body>
 		<header>
-			<nav>
+			<nav class="main-nav">
 				<h1 class="logo">Wan Menzy</h1>
 				<ul id="navigation-flex" class="navigation">
+					<iconify-icon
+						icon="solar:moon-bold-duotone"
+						class="navigation-items"
+						id="toggle-mode"
+					></iconify-icon>
 					<li class="navigation-items"><a href="">About Me</a></li>
 					<li class="navigation-items"><a href="">Projects</a></li>
 					<li class="navigation-items"><a href="">Skills</a></li>
@@ -24,7 +29,7 @@
 			<section>
 				<div class="about-me-container">
 					<div class="about-me-text-container">
-						<h2>About me</h2>
+						<h3>About me</h3>
 						<p>
 							I'm Joshua Mensah, but you in paeticular can call me
 							<b>Wan Menzy</b>. I'm a filmmaker, content creator
@@ -72,37 +77,55 @@
 			<!-- this section includes videos that will display portfolio projects -->
 
 			<section>
-				<h2>Projects</h2>
+				<h2 class="project-text">PROJECTS</h2>
 
 				<div class="video-card">
-					<iframe
-						src="https://www.youtube.com/embed/48RFJTv7_O0?si=xoVvalZLexXr6uVP"
-						title="YouTube video player"
-						frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-						allowfullscreen
-					></iframe>
-					<iframe
-						src="https://www.youtube.com/embed/74iMQUbocLo?si=fHgooWZohHu8ARrk"
-						title="YouTube video player"
-						frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-						allowfullscreen
-					></iframe>
-					<iframe
-						src="https://www.youtube.com/embed/L_dHJKwtlBc?si=ErAHgOoCtoBtCQJq"
-						title="YouTube video player"
-						frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-						allowfullscreen
-					></iframe>
-					<iframe
-						src="https://www.youtube.com/embed/txIbBKTuWhs?si=cyNYqBdT_JQWVKay"
-						title="YouTube video player"
-						frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-						allowfullscreen
-					></iframe>
+					<div>
+						<iframe
+							src="https://www.youtube.com/embed/48RFJTv7_O0?si=xoVvalZLexXr6uVP"
+							title="YouTube video player"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							allowfullscreen
+						></iframe>
+						<iframe
+							src="https://www.youtube.com/embed/74iMQUbocLo?si=fHgooWZohHu8ARrk"
+							title="YouTube video player"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							allowfullscreen
+						></iframe>
+						<iframe
+							src="https://www.youtube.com/embed/-nf57pBJDTk?si=0rT1BK0PmWYbKojX"
+							title="YouTube video player"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							allowfullscreen
+						></iframe>
+					</div>
+					<div>
+						<iframe
+							src="https://www.youtube.com/embed/L_dHJKwtlBc?si=ErAHgOoCtoBtCQJq"
+							title="YouTube video player"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							allowfullscreen
+						></iframe>
+						<iframe
+							src="https://www.youtube.com/embed/txIbBKTuWhs?si=cyNYqBdT_JQWVKay"
+							title="YouTube video player"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							allowfullscreen
+						></iframe>
+						<iframe
+							src="https://www.youtube.com/embed/0qiFl0chUzI?si=Nb9MZqCJFFZCqaNe"
+							title="YouTube video player"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							allowfullscreen
+						></iframe>
+					</div>
 				</div>
 			</section>
 			<!-- This section will hold all the footer tags and details -->
@@ -118,23 +141,32 @@
 							href="https://www.instagram.com/1menzy"
 							class="image-ig"
 							target="_blank"
-							>i</a
-						><a
+							><iconify-icon
+								icon="teenyicons:instagram-solid"
+							></iconify-icon
+						></a>
+						<a
 							href="https://www.youtube.com/c/WanMenzy"
 							class="image-yt"
 							target="_blank"
-							>y</a
+							><iconify-icon
+								icon="logos:youtube-icon"
+							></iconify-icon></a
 						><a
 							href="https://twitter.com/1menzy"
 							class="image-tw"
 							target="_blank"
-							>t</a
+							><iconify-icon
+								icon="devicon:twitter"
+							></iconify-icon> </a
 						><a
 							href="https://www.linkedin.com/in/wanmenzy/"
 							class="image-lin"
 							target="_blank"
-							>l</a
-						>
+							><iconify-icon
+								icon="devicon:linkedin"
+							></iconify-icon
+						></a>
 					</div>
 					<p>2023 EnzymsGh. All Rights Reserved</p>
 				</div>
@@ -147,5 +179,6 @@
 			</footer>
 		</main>
 		<script src="myWebsiteIndex.js"></script>
+		<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 	</body>
 </html>
