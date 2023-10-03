@@ -1,7 +1,7 @@
 .env
 .idea/
 .idea_old/
-.DS_Store/
+.DS_Store
 node_modules/
 _binned/
 hidden/
