@@ -63,7 +63,7 @@ h3 {
 
 .hero-section {
 	position: relative;
-	background-image: url("DSC03307-2.jpg"); /* Replace with your image path */
+	background-image: url("hero_image.jpg"); /* Replace with your image path */
 	background-size: cover;
 	background-position: center;
 	height: 60vh;
